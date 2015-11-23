@@ -1,0 +1,512 @@
+cg[1:1123,"County"]<-sapply(strsplit(latlong2county(latlon), ","), `[`, 2)
+cg$County
+c(cg$Name, cg$County)
+cg[,c("Name","County")]
+View(cg)
+write.csv(cg, file = "CRS_plusGeo_plusCounty.csv",row.names=FALSE)
+ftype(lm)
+library(pryr)
+install.packages("pryr")
+library(pryr)
+ftype(mean)
+ftype(dgamma)
+ftype(lm)
+ftype(show)
+ftype(colSums)
+show(crs)
+setwd("~/myShinyApp")
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+runExample("01_hello")
+runExample("02_text")
+runExample("03_reactivity")
+runExample("06_tabsets")
+shiny::runApp()
+runApp(display.mode = 'showcase')
+runApp(display.mode = 'showcase')
+runApp(display.mode = 'showcase')
+runApp(display.mode = 'showcase')
+runApp(display.mode = 'showcase')
+require(stats); require(graphics)
+boxplot(count ~ spray, data = InsectSprays,
+xlab = "Type of spray", ylab = "Insect count",
+main = "InsectSprays data", varwidth = TRUE, col = "lightgray")
+fm1 <- aov(count ~ spray, data = InsectSprays)
+summary(fm1)
+opar <- par(mfrow = c(2, 2), oma = c(0, 0, 1.1, 0))
+plot(fm1)
+fm2 <- aov(sqrt(count) ~ spray, data = InsectSprays)
+summary(fm2)
+plot(fm2)
+par(opar)
+plot(fm2)
+plot(fm2)
+require(graphics)
+dotchart(log(islands, 10),
+main = "islands data: log10(area) (log10(sq. miles))")
+dotchart(log(islands[order(islands)], 10),
+main = "islands data: log10(area) (log10(sq. miles))")
+require(stats); require(graphics)
+pairs(LifeCycleSavings, panel = panel.smooth,
+main = "LifeCycleSavings data")
+fm1 <- lm(sr ~ pop15 + pop75 + dpi + ddpi, data = LifeCycleSavings)
+summary(fm1)
+model <- glm(formula= vs ~ wt + disp, data=mtcars, family=binomial)
+str(mtcars)
+pairs(mtcars)
+model <- glm(formula= vs ~ wt + am, data=mtcars, family=binomial)
+summary(model)
+model <- glm(formula= vs ~ wt + disp, data=mtcars, family=binomial)
+summary(model)
+model <- glm(formula= vs ~ wt + disp + am, data=mtcars, family=binomial)
+model <- glm(formula= vs ~ wt + cyl +am, data=mtcars, family=binomial)
+summary(model)
+model <- glm(formula= vs ~ wt + ho +am, data=mtcars, family=binomial)
+model <- glm(formula= vs ~ wt + hp +am, data=mtcars, family=binomial)
+summary(model)
+model <- glm(formula= vs ~ wt + am, data=mtcars, family=binomial)
+summary(model)
+newdata = data.frame(wt = 2.1, am = 1)
+summary(mtcars)
+predict(model, newdata, type="response")
+summary(mtcars$vs)
+mtcars$vs
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+install.packages("UsingR")
+library(UsingR)
+data(galton)
+head(galton) # Show first few records
+tail(galton) # Show last few records
+summary(galton) # Statistical summary
+table(galton) # Show a distribution of values
+hist(galton$child) # A visual distribution of values
+plot(galton$parent, galton$child, pch=19, col=”blue”)
+plot(galton$parent, galton$child, pch=19, col='blue')
+warnings()
+plot(galton$parent, galton$child, pch=1, col='blue')
+plot(galton$parent, galton$child, pch=10, col='blue')
+head(galton)
+lm1 <- lm(galton$child ~ galton$parent)
+lines(galton$parent, lm1$fitted, col=”red”, lwd=3)
+lines(galton$parent, lm1$fitted, col='red', lwd=3)
+warnings()
+head(galton)
+lines(galton$parent, lm1$fitted, col='red', lwd=3)
+rsconnect::setAccountInfo(mlazo, shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+;
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::setAccountInfo(name='mlazo',
+token='478FDDDBCE9913744882F58A4DAEB7E6',
+secret='<SECRET>')
+rsconnect::setAccountInfo()
+install.packages('devtools')
+devtools::install_github('rstudio/shinyapps')
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::accountInfo(mlazo)
+rsconnect::accountInfo('mlazo')
+rsconnect::setAccountInfo(name='mlazo',token='478FDDDBCE9913744882F58A4DAEB7E6',secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+options(shinyapps.service_url = "http://api.shinyapps.io/v1")
+rsconnect::setAccountInfo(name='mlazo',token='478FDDDBCE9913744882F58A4DAEB7E6',secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+options(rpubs.upload.method = "internal")
+rsconnect::setAccountInfo(name='mlazo',token='478FDDDBCE9913744882F58A4DAEB7E6',secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+options(RCurlOptions = list(verbose = FALSE, capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"), ssl.verifypeer = FALSE))
+rsconnect::setAccountInfo(name='mlazo',token='478FDDDBCE9913744882F58A4DAEB7E6',secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+install.packages('RCurl')
+options(RCurlOptions = list(verbose = FALSE, capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"), ssl.verifypeer = FALSE))
+rsconnect::setAccountInfo(name='mlazo',token='478FDDDBCE9913744882F58A4DAEB7E6',secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+options(RCurlOptions = list(verbose = FALSE, capath = system.file('CurlSSL', 'cacert.pem', package = 'RCurl'), ssl.verifypeer = FALSE))
+rsconnect::setAccountInfo(name='mlazo',token='478FDDDBCE9913744882F58A4DAEB7E6',secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+packageDescription('shinyapps')
+packageDescription('rsconnect')
+getOption('shinyapps.service_url')
+options(shinyapps.http.trace = TRUE)
+options(shinyapps.service_url = "http://api.shinyapps.io/v1")
+getOption('shinyapps.service_url')
+set_config(use_proxy('http://gatekeeper.mitre.org', 80))
+library(rsconnect)
+rsconnect::setAccountInfo(name='mlazo',token='478FDDDBCE9913744882F58A4DAEB7E6',secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::setAccountInfo(name='mlazo',token='478FDDDBCE9913744882F58A4DAEB7E6',secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+library(RCurl)
+library(httr)
+set_config( config( ssl.verifypeer = 0L ) )
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+set_config( config( ssl_verifypeer = 0L ) )
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+library(RCurl)
+library(httr)
+set_config( config( ssl.verifypeer = 0L ) )
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+library("bitops", lib.loc="~/myShinyApp/packrat/lib/x86_64-apple-darwin13.4.0/3.2.1")
+library("RCurl", lib.loc="~/myShinyApp/packrat/lib/x86_64-apple-darwin13.4.0/3.2.1")
+install.packages(c("dplyr", "ggmap", "HistData", "Hmisc", "httpuv", "jsonlite", "mapproj", "maps", "maptools", "mime", "R6", "Rcpp", "scales", "shiny", "stringi", "xtable"))
+install.packages(c("boot", "class", "cluster", "codetools", "foreign", "KernSmooth", "lattice", "MASS", "Matrix", "mgcv", "nlme", "nnet", "rpart", "spatial", "survival"), lib="/Users/mlazo/myShinyApp/packrat/lib-R")
+library(bitops)
+library(RCurl)
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+date: Nov 20, 2015
+date: 'Nov 20, 2015'
+date: 11/21/2015
+date: '11/21/2015'
+date:
+''
+date: "Nov 20 2015"
+11First Slide
+First Slide
+install.packages("knitr")
+myShinyApp
+========================================================
+author: mlazo
+date: "Nov 20 2015"
+First Slide
+========================================================
+For more details on authoring R presentations click the
+**Help** button on the toolbar.
+- Bullet 1
+- Bullet 2
+- Bullet 3
+Slide With Code
+========================================================
+```{r}
+summary(cars)
+```
+Slide With Plot
+========================================================
+```{r, echo=FALSE}
+plot(cars)
+```
+myShinyApp
+========================================================
+author: mlazo
+date: "Nov 20 2015"
+First Slide
+========================================================
+For more details on authoring R presentations click the
+**Help** button on the toolbar.
+- Bullet 1
+- Bullet 2
+- Bullet 3
+Slide With Code
+========================================================
+```{r}
+summary(cars)
+```
+Slide With Plot
+========================================================
+```{r, echo=FALSE}
+plot(cars)
+```
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+? rsconnect::setAccountInfo
+library(rsconnect)
+library(shinyapps)
+library(rsconnect)
+library(shiny)
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+library(rsconnect)
+detach("package:shinyapps", unload=TRUE)
+detach("package:shiny", unload=TRUE)
+library(shiny)
+library(shinyapps)
+getCurlOptionsConstants()
+install_github('slidify','ramnathv')
+library(devtools)
+install_github('slidify','ramnathv')
+install_github('slidifyLibraries','ramnathv')
+library(slidify)
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+opts <- list(
+capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"),
+ssl.verifypeer = FALSE);
+options(RCurlOptions = opts)
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+opts <- list(
+capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"),
+ssl_verifypeer = FALSE);
+options(RCurlOptions = opts)
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+opts <- list(
+capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"));
+options(RCurlOptions = opts)
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"),ssl.verifypeer=FALSE)
+capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"),
+capath = system.file('CurlSSL', 'cacert.pem', package = 'RCurl'),
+capath = system.file('CurlSSL', 'cacert.pem', package = 'RCurl'), ssl_verifyPeer=FALSE)
+capath = system.file(('CurlSSL', 'cacert.pem', package = 'RCurl'), ssl_verifyPeer=FALSE)
+capath = (system.file('CurlSSL', 'cacert.pem', package = 'RCurl'), ssl_verifyPeer=FALSE)
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+ssl_verifypeer=FALSE
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+proxies={}
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+Sys.setenv(no_proxy="*")
+sys.setenv(no_proxy="*")
+Sys.setenv(http_proxy="")
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+library(HistData)
+data("GaltonFamilies")
+head(GaltonFamilies)
+head(Galton)
+Parents <- subset(GaltonFamilies, !duplicated(GaltonFamilies$family))
+with(Parents, {
+sunflowerplot(mother, father, rotate=TRUE, pch=16,
+xlab="Mother height", ylab="Father height")
+dataEllipse(mother, father, add=TRUE, plot.points=FALSE,
+center.pch=NULL, levels=0.68)
+abline(lm(father ~ mother), col="red", lwd=2)
+}
+)
+library(dplyr)
+library(ggplot2)
+Parents <- subset(GaltonFamilies, !duplicated(GaltonFamilies$family))
+with(Parents, {
+sunflowerplot(mother, father, rotate=TRUE, pch=16,
+xlab="Mother height", ylab="Father height")
+dataEllipse(mother, father, add=TRUE, plot.points=FALSE,
+center.pch=NULL, levels=0.68)
+abline(lm(father ~ mother), col="red", lwd=2)
+})
+library(graphics)
+Parents <- subset(GaltonFamilies, !duplicated(GaltonFamilies$family))
+with(Parents, {
+sunflowerplot(mother, father, rotate=TRUE, pch=16,
+xlab="Mother height", ylab="Father height")
+dataEllipse(mother, father, add=TRUE, plot.points=FALSE,
+center.pch=NULL, levels=0.68)
+abline(lm(father ~ mother), col="red", lwd=2)
+})
+regmod <- lm(childHeight ~ father + mother + gender, data=gf)
+regmod <- lm(childHeight ~ father + mother + gender, data=df)
+regmod <- lm(childHeight ~ father + mother + gender, data=GaltonFamilies)
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+ch <- predict(regmod, newdata=df)
+})
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+example("GaltonFamilies")
+library(car)
+install.packages(car)
+example("GaltonFamilies")
+library(car)
+example("Galton")
+install.packages(car)
+install.packages(car)
+install.packages("car")
+example("Galton")
+example("GaltonFamilies")
+example("Galton")
+with(Galton, {})
+with(Galton, {sunflowerplot(parent, child, xlim=c(62,74),ylim=c(62,74)) reg <- lm(child ~parent) abline(reg) lines(lowess(parent,child),col="blue", lwd=2) if(require(car)){dataEllipse(parent,child,xlim=c(62,74),ylim=c(62,74),plot.points=FALSE)}})
+with(Galton, {sunflowerplot(parent, child, xlim=c(62,74),ylim=c(62,74)) reg <- lm(child ~parent) abline(reg) lines(lowess(parent,child),col="blue", lwd=2) if(require(car)){data.ellipse(parent,child,xlim=c(62,74),ylim=c(62,74),plot.points=FALSE)}})
+data(GaltonFamilies)str(GaltonFamilies)## reproduce Fig 2 in Hanley (2004)library(car)scatterplot(childHeight ~ midparentHeight | gender, data=GaltonFamilies,            ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))20Guerry# multiply daughters􏰀 heights by 1.08GF1 <- within(GaltonFamilies,              {childHeight <- ifelse (gender=="female", 1.08*childHeight, childHeight)} ) scatterplot(childHeight ~ midparentHeight | gender, data=GF1,                                                                                                      ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))# add 5.2 to daughters􏰀 heightsGF2 <- within(GaltonFamilies,              {childHeight <- ifelse (gender=="female", childHeight+5.2, childHeight)} )scatterplot(childHeight ~ midparentHeight | gender, data=GF2,            ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
+data(GaltonFamilies)str(GaltonFamilies)## reproduce Fig 2 in Hanley (2004)library(car)scatterplot(childHeight ~ midparentHeight | gender, data=GaltonFamilies,            ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
+data(GaltonFamilies)str(GaltonFamilies)## reproduce Fig 2 in Hanley (2004)library(car)scatterplot(childHeight ~ midparentHeight | gender, data=GaltonFamilies,            ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
+data(GaltonFamilies)
+data(GaltonFamilies)str(GaltonFamilies)## reproduce Fig 2 in Hanley (2004)library(car)scatterplot(childHeight ~ midparentHeight | gender, data=GaltonFamilies,            ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
+scatterplot(childHeight ~ midparentHeight | gender, data=GaltonFamilies,            ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
+scatterplot(childHeight ~ midparentHeight | gender, data=GaltonFamilies,            ellipse=TRUE, levels=0.68)
+plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 1. Scatterplot of Galton Family Data with Fitted Values",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "pink", "light blue"))
+legend(65,80,pch=c(19,19),col=c("pink","light blue"),c("female", "male"),bty="o",cex=.8)
+lines(GaltonFamilies$midparentHeight,fitted(fit),col="violet",lwd=2)
+fit <- lm(childHeight ~ midparentHeight,data=GaltonFamilies)
+plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 1. Scatterplot of Galton Family Data with Fitted Values",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "pink", "light blue"))
+legend(65,80,pch=c(19,19),col=c("pink","light blue"),c("female", "male"),bty="o",cex=.8)
+lines(GaltonFamilies$midparentHeight,fitted(fit),col="violet",lwd=2)
+library(ggplot2)
+qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+library(ggplot2)
+qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 1. Scatterplot of Galton Family Data with Fitted Values",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "pink", "light blue"))
+legend(65,80,pch=c(19,19),col=c("pink","light blue"),c("female", "male"),bty="o",cex=.8)
+lines(GaltonFamilies$midparentHeight,fitted(fit),col="violet",lwd=2)
+plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 1. Scatterplot of Galton Family Data with Fitted Values",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "pink", "light blue"))
+legend(65,80,pch=c(19,19),col=c("pink","light blue"),c("female", "male"),bty="o",cex=.8)
+lines(GaltonFamilies$midparentHeight,fitted(fit),col="violet",lwd=2)
+p<-qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+warnings()
+install.packages(c("curl", "dplyr", "ggmap", "HistData", "Hmisc", "httpuv", "jsonlite", "mapproj", "maps", "maptools", "R6", "Rcpp", "scales", "shiny", "xtable"))
+install.packages(c("boot", "class", "cluster", "codetools", "foreign", "KernSmooth", "lattice", "MASS", "Matrix", "mgcv", "nlme", "nnet", "rpart", "spatial", "survival"), lib="/Users/mlazo/myShinyApp/packrat/lib-R")
+p<-qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+library(ggplot2)
+p<-qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+p
+library(HistData)
+p
+library(car)
+p
+p<-qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+p<-qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 1. Scatterplot of Galton Family Data with Fitted Values",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "pink", "light blue"))
+legend(65,80,pch=c(19,19),col=c("pink","light blue"),c("female", "male"),bty="o",cex=.8)
+shiny::runApp()
+plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 1. Scatterplot of Galton Family Data with Fitted Values",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "pink", "light blue"))
+legend(65,80,pch=c(19,19),col=c("pink","light blue"),c("female", "male"),bty="o",cex=.8)
+p<-qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+text <- "This is some text"
+p + geom_text(aes(label=text), family="Times", fontface="italic", lineheight=.8) +
+annotate(geom="text", x=1, y=1.5, label="Annotation text", colour="red",
+size=7, family="Courier", fontface="bold", angle=30)
+sunflowerplot(galton)
+lmfit <- lm(child ~parent, data=galton)
+warnings()
+shiny::runApp()
+sunflowerplot(galton)
+example("Galton")
+p + geom_text(aes(label=text), family="Times", fontface="italic", lineheight=.8) +
+annotate(geom="text", x=1, y=1.5, label="Annotation text", colour="red",
+size=7, family="Courier", fontface="bold", angle=30)
+p + geom_text(aes(label=text), family="Times", fontface="italic", lineheight=.8) +
+annotate(geom="text", x=1, y=1.5, colour="red",
+size=7, family="Courier", fontface="bold", angle=30)
+p<-qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 2. Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+p
+p<-qplot(midparentHeight,childHeight,colour=gender,data=GaltonFamilies,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Scatterplot matrix of Galton Family Data by Gender of the Child",facets=.~gender,geom=c("point","smooth"),method="lm")
+plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Figure 1. Scatterplot of Galton Family Data with Fitted Values",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "pink", "light blue"))
+legend(65,80,pch=c(19,19),col=c("pink","light blue"),c("female", "male"),bty="o",cex=.8)
+lines(GaltonFamilies$midparentHeight,fitted(fit),col="violet",lwd=2)
+shiny::runApp()
+shiny::runApp()
+install.packages("shinythemes")
+install.packages("shinythemes")
+library(sys)
+Sys.setenv(no_proxy="*")
+install.packages("shinythemes")
+Sys.setenv(http_proxy="")
+install.packages("shinythemes")
+Sys.setenv("http_proxy"="")
+install.packages("shinythemes")
+Sys.unsetenv("http_proxy")
+install.packages("shinythemes")
+Sys.setenv(("http_proxy"=""))
+Sys.setenv("http_proxy"="")
+install.packages("shinythemes")
+Sys.setenv(no_proxy="*")
+install.packages("shinythemes")
+Sys.setenv(http_proxy="")
+install.packages("shinythemes")
+Sys.getenv(http_proxy)
+Sys.getenv(https_proxy)
+Sys.setenv(http_proxy='')
+Sys.getenv(https_proxy)
+Sys.getenv(http_proxy)
+install.packages("shinythemes")
+install.packages("shinythemes")
+Sys.getenv(http_proxy, unset=TRUE)
+install.packages("shinythemes")
+Sys.setenv(http_proxy, unset=TRUE)
+Sys.setenv(http_proxy="")
+Sys.setenv(http_proxy, unset=TRUE)
+install.packages("shinythemes")
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+df2 <- data.frame(x = 1:5 , y = 1:25, z = 1:25)
+s <- ggplot(df2, aes(x = x, y = y))
+s + geom_point(aes(shape = z), size = 4) + scale_shape_identity()
+# While all symbols have a foreground colour, symbols 19-25 also take a
+# background colour (fill)
+s + geom_point(aes(shape = z), size = 4, colour = "Red") +
+scale_shape_identity()
+s + geom_point(aes(shape = z), size = 4, colour = "Red", fill = "Black") +
+scale_shape_identity()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shiny::runApp()
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shiny::runApp()
+library(shiny)
+shiny::runApp()
+deployApp()
+library(shinyapps)
+deployApp()
+shiny::runApp()
+require(shinyapps)
+deployApp()
+setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+deployApp()
+shiny::runApp()
+shiny::runApp()
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+Sys.unsetenv(http_proxy)
+Sys.getenv(http_proxy)
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+library(devtools)
+library("rsconnect", lib.loc="~/myShinyApp/packrat/lib/x86_64-apple-darwin13.4.0/3.2.1")
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+Sys.setenv(http_proxy="")
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+library(rsconnect)
+Sys.setenv("http_proxy"="")
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shinyapps::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shiny::runApp()
+install.packages(c("curl", "dplyr", "ggmap", "HistData", "Hmisc", "httpuv", "jsonlite", "mapproj", "maps", "maptools", "R6", "Rcpp", "scales", "shiny", "xtable"))
+install.packages(c("boot", "class", "cluster", "codetools", "foreign", "KernSmooth", "lattice", "MASS", "Matrix", "mgcv", "nlme", "nnet", "rpart", "spatial", "survival"), lib="/Users/mlazo/myShinyApp/packrat/lib-R")
+rsconnect::setAccountInfo(name='mlazo', token='478FDDDBCE9913744882F58A4DAEB7E6', secret='Y2BMwgZyGSksRJdMEdSEdlsNc0UeoNEhMu7AEHXQ')
+shiny::runApp()
+library(rsconnect)
+deployApp()
+install.packages(BH)
+install.packages("BH")
+deployApp()
+library(devtools)
+deployApp()
+session$user
+session_info()
+deployApp()

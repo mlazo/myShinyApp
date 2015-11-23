@@ -1,0 +1,18 @@
+{
+    "contents" : "library(shiny)\n\n# Define UI for our height prediction application\nshinyUI(fluidPage(\n  \n  #   Application title\n  titlePanel(\"Predict the height of your child, Based on Galton Data\"),\n  \n  # Sidebar with a couple of numeric inputs and a radio button\n  #pageWithSidebar( \n  sidebarLayout(\n    sidebarPanel(\n      helpText(\"Please use the sliders to set heights for the mom and dad, and select child's gender. The results is a prediction of the child's height.\"),\n      sliderInput(inputId = \"dad\",\n                   label = \"Dad's height:\",\n                   value = 69, # default dad height\n                   min = 58,\n                   max = 78,\n                   step = 1),\n      sliderInput(inputId = \"mom\",\n                   label = \"Mom's height:\",\n                   value = 62, # default mother height\n                   min = 48,\n                   max = 78,\n                   step = 1),\n      radioButtons(inputId = \"whichGender\",\n                   label = \"Child's gender: \",\n                   choices = c(\"Female\"=\"female\", \"Male\"=\"male\"),\n                   inline = TRUE)\n    ),\n    \n    # Show text indicating the values entered\n    mainPanel(\n      #textOutput(\"parentsText\"),\n      textOutput(\"dadText\"),\n      textOutput(\"momText\"),\n      textOutput(\"prediction\"),\n      plotOutput(\"dotPlot\", width=\"50%\")\n    )\n    )\n))",
+    "created" : 1448151644853.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3385972250",
+    "id" : "36E38A59",
+    "lastKnownWriteTime" : 1448228089,
+    "path" : "~/myShinyApp/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

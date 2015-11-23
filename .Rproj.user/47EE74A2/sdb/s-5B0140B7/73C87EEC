@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle       : Developing Data Products \nsubtitle    : ShinyApp\nauthor      : Marcia Lazo\njob         : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Read-And-Delete\n\n1. Edit YAML front matter\n2. Write using R Markdown\n3. Use an empty line followed by three dashes to separate slides!\n\n--- .class #id \n\n## Slide 2\n\n\n\n\n",
+    "created" : 1448233874140.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1401716967",
+    "id" : "73C87EEC",
+    "lastKnownWriteTime" : 1448234257,
+    "path" : "~/myShinyApp2/mydeck/index.Rmd",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

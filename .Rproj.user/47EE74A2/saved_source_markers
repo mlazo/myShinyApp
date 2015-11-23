@@ -1,0 +1,1 @@
+{"active_set":"Diagnostics","sets":[{"base_path":"","markers":[{"column":45,"line":51,"log_line":-1,"log_path":"","message":"missing argument to function call","path":"~/myShinyApp/server.R","show_error_list":true,"type":1}],"name":"Diagnostics"}]}

@@ -1,0 +1,7 @@
+{
+    "installOptions" : {
+        "installDependencies" : true,
+        "installFromRepository" : true,
+        "libraryPath" : "/Users/mlazo/myShinyApp/packrat/lib/x86_64-apple-darwin13.4.0/3.2.1"
+    }
+}

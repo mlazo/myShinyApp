@@ -1,0 +1,45 @@
+myShinyApp
+========================================================
+author: mlazo 
+date: "Nov 20 2015"
+Developing Data Products Shiny App
+Predicting your child's height when fully grown, based on parent's height
+
+Developing Data Products  
+========================================================
+Using the Galton Families data set I put together a model that will predict a child's adult height based on the parents' heights. Here is a sample of the Galton Families Data
+```{r, echo=FALSE}
+library(HistData)
+head(GaltonFamilies, n=3)
+```
+
+Galton Model
+========================================================
+Using code from the package HistData
+This uses the Galton Data, which has combined the mother's and father's heights, to create a sunflower plot. Larger dots imply more values. 
+```{r, echo=FALSE}
+    with(Galton,
+    {
+    sunflowerplot(parent,child, xlim=c(62,74), ylim=c(62,74))
+    reg <- lm(child ~ parent)
+    abline(reg)
+    lines(lowess(parent, child), col="blue", lwd=2)
+    if(require(car)) {
+    dataEllipse(parent,child, xlim=c(62,74), ylim=c(62,74), plot.points=FALSE)
+    }
+})
+```
+
+Using the app
+========================================================
+In order to use my shiny app you simply use the sliders to select the heights for the mom and the dad, and also choose the gender of the child. The shiny app is interactive, so you will immediately see the results of the calculations, predicting the height of the child. The app is located at
+
+https://mlazo.shinyapps.io/myShinyApp
+
+
+References
+====================================================
+
+Learning to use Shiny:  http://rstudio.github.io/shiny/tutorial/
+About the Galton Data: http://www.math.uah.edu/stat/data/Galton.html
+

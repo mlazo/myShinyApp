@@ -1,0 +1,17 @@
+{
+    "contents" : "myShinyApp\n========================================================\nauthor: mlazo \ndate: \"Nov 20 2015\"\nDeveloping Data Products Shiny App\nPredicting your child's height when fully grown, based on parent's height\n\nDeveloping Data Products  \n========================================================\nUsing the Galton Families data set I put together a model that will predict a child's adult height based on the parents' heights. Here is a sample of the Galton Families Data\n```{r, echo=FALSE}\nlibrary(HistData)\nhead(GaltonFamilies, n=3)\n```\n\nGalton Model\n========================================================\nUsing code from the package HistData\nThis uses the Galton Data, which has combined the mother's and father's heights, to create a sunflower plot. Larger dots imply more values. \n```{r, echo=FALSE}\n    with(Galton,\n    {\n    sunflowerplot(parent,child, xlim=c(62,74), ylim=c(62,74))\n    reg <- lm(child ~ parent)\n    abline(reg)\n    lines(lowess(parent, child), col=\"blue\", lwd=2)\n    if(require(car)) {\n    dataEllipse(parent,child, xlim=c(62,74), ylim=c(62,74), plot.points=FALSE)\n    }\n})\n```\n\nUsing the app\n========================================================\nIn order to use my shiny app you simply use the sliders to select the heights for the mom and the dad, and also choose the gender of the child. The shiny app is interactive, so you will immediately see the results of the calculations, predicting the height of the child. The app is located at\n\nhttps://mlazo.shinyapps.io/myShinyApp\n\n\nReferences\n====================================================\n\nLearning to use Shiny:  http://rstudio.github.io/shiny/tutorial/\nAbout the Galton Data: http://www.math.uah.edu/stat/data/Galton.html\n\n",
+    "created" : 1448233541091.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "83983436",
+    "id" : "A30C68BE",
+    "lastKnownWriteTime" : 1448236272,
+    "path" : "~/myShinyApp2/myShinyApp.Rpres",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_presentation"
+}

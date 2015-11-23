@@ -1,0 +1,17 @@
+{
+    "contents" : "setwd(\"~/Documents/Flood/CRS_Data\")\nsource(\"latlon2County_State.R\")\nlibrary(dplyr)\nlibrary(scales)\nlibrary(ggmap)\nlibrary(rgeos)\nrequire(maps)\nrequire(RgoogleMaps)\nrequire(sp)\nrequire(maps)\nrequire(maptools)\n\n#cc430=cFRB+cFDN+cCSI+cLSI+cPCF+cPSC+cNBR+cENL+cOHS+ cLD + cSH + cSMS + cBC + cSTF + cMHP + cCAZ \n#Using existing data this is equivalent to\n#cc430=cFRB+cFDN+cCSI+cLSI+cPCF+cPSC+cNBR+cENL+cOHS+ cLD + c430SH + cSMS + cBC + cSTF + cMHP + cCAZ\ncrs = read.csv(\"CRS_Data_2013v2.csv\", sep=\"\\t\", header=TRUE)\ncrsgeo = read.csv(\"CRS_plusGeo.csv\", header=TRUE)\ncg <- crsgeo\n\nglimpse(crs)\nrow_sub = apply(crs, 1, function(row) all(row !=0 ))\n##Subset as usual\ncrs[row_sub,]\nunique(crs$LEV1)\nsummary(crs$cAFD)\nsunflowerplot(crs$cAFD1+crs$cAFD2 + crs$cAFD3+crs$cAFD4 +crs$cAFD5 + crs$cAFD6, crs$cAFD, seg.col=alpha(“red”,.1))\n\nsunflowerplot(crs$cFRB + crs$cFDN + crs$cCSI + crs$cLSI + crs$cPCF + crs$cPSC + crs$cNBR +\n                crs$cENL + crs$cOHS + crs$cLD + crs$c430SH + crs$cSMS + crs$cBC + crs$cSTF + crs$cMHP + crs$cCAZ, crs$c430, seg.col=alpha(“red”,.1))\n\np <- ggplot(crs, aes(x=AMD1+AMD2+AMD3,y=cAMD)) + geom_point(position=position_jitter(w=0.3,h=0)) +geom_point(shape=5, color=\"blue\")+abline(lm(AMD1+AMD2+AMD3~ cAMD), col=\"red\")\np\n\nt <- subset(crs, select=c(\"CID\",\"Name\", \"State\", \"AMD1\", \"AMD2\", \"AMD3\",\"cAMD\"))\nt[t$cAMD >72 & t$cAMD < 75,]\n\n\nt <- subset(crs, select=c(\"CID\",\"Name\", \"State\", \"cSMR\", \"cSMP\", \"cFRX\", \"FRX\", \"ESC\", \"WQ\", \"c450\"))\na <- floor(t$cSMR + .5)+round(t$cSMP)+ t$cFRX + t$ESC + t$WQ\nt[t$c450!= a,]\n",
+    "created" : 1437755143497.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3179800280",
+    "id" : "30439500",
+    "lastKnownWriteTime" : 1438232223,
+    "path" : "~/Documents/Flood/CRS_Data/crs.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

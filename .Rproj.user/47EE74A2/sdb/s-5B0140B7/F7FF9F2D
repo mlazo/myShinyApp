@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1438010143331.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F7FF9F2D",
+    "lastKnownWriteTime" : 4294901760,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "ahyuectca8",
+        "caption" : "crs",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=crs&cache_key=ahyuectca8",
+        "displayedObservations" : 1273,
+        "environment" : "",
+        "object" : "crs",
+        "totalObservations" : 1273,
+        "variables" : 248
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
